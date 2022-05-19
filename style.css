@@ -515,8 +515,8 @@ article {
 }
 #contact-section aside form {
   display: grid;
-  grid-template-columns: 0.7fr 0.3fr 1fr;
-  grid-template-rows: 40px 40px 80px 40px;
+  grid-template-columns: 0.6fr 0.4fr 1fr;
+  grid-template-rows: 40px 40px 80px 60px;
   grid-gap: 15px;
 }
 #contact-section aside form input,
