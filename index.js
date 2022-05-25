@@ -8,7 +8,9 @@ let navlinks = document.getElementById('navlinks')
 let links = document.getElementsByClassName('links')
 let menu = document.getElementsByClassName('fa-bars')
 let close = document.getElementsByClassName('fa-xmark');
-
+window.onresize = function () {
+    location.reload();
+}
 window.onload = function () {
     console.log(width)
     if (width <= 768) {
@@ -90,7 +92,7 @@ window.addEventListener('scroll', () => {
     else if (window.scrollY < 100 && width > 768) {
         navbar[0].style.background = "none";
         navbar[0].style.padding = "30px 50px";
-        lio[0].style.color = "rgb(15, 179, 56)"
+        lio[0].style.color = "rgb(15, 179, 56)" 
         links[0].addEventListener('mouseover', () => {
             links[0].style.color = "rgb(15, 179, 56)"
         })
@@ -150,7 +152,7 @@ let grid = document.getElementsByClassName('grid');
 let paintbrush = document.getElementsByClassName('fa-paintbrush');
 let chart = document.getElementsByClassName('fa-chart-line');
 let code = document.getElementsByClassName('fa-code ');
-let teamGrid = document.getElementsByClassName('team-grid')
+let teamGrid = document.getElementsByClassName('team-grid');
 let team_switch = document.getElementsByClassName('team-switcher');
 let team_section = document.getElementById('teams-section');
 
