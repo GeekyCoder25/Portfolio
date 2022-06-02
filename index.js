@@ -9,7 +9,7 @@ let links = document.getElementsByClassName('links')
 let menu = document.getElementsByClassName('fa-bars')
 let close = document.getElementsByClassName('fa-xmark');
 window.onresize = function () {
-    location.reload();
+    if (width > 768) location.reload();
 }
 window.onload = function () {
     console.log(width)
