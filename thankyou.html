@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmed</title>
+    <style>
+        body {
+            overflow-y: hidden;
+        }
+
+        div {
+            margin: auto;
+            width: 100vw;
+        }
+
+        h1 {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow-y: hidden;
+        }
+
+        #text {
+            color: rgb(26, 190, 40);
+            text-align: center;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 id="text">You've succesfully submitted your info and will be reviewed, Thanks for checking out my portfolio
+        </h1>
+    </div>
+    <script>
+        window.onload = function () {
+            alert('You\'ve succesfully submitted your info and will be reviewed, Thanks for checking out my portfolio')
+            let text = document.querySelector('#text');
+            let x = ((Math.random() * 1000)).toFixed()
+            let y = ((Math.random() * 1000)).toFixed()
+            let z = ((Math.random() * 1000)).toFixed()
+            if (x > 255) x = 200;
+            if (y > 255) y = 100;
+        }
+    </script>
+</body>
+
+
+</html>
