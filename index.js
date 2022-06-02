@@ -8,9 +8,7 @@ let navlinks = document.getElementById('navlinks')
 let links = document.getElementsByClassName('links')
 let menu = document.getElementsByClassName('fa-bars')
 let close = document.getElementsByClassName('fa-xmark');
-window.onresize = function () {
-    if (width > 768) location.reload();
-}
+
 window.onload = function () {
     console.log(width)
     if (width <= 768) {
