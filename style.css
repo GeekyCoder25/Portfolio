@@ -431,7 +431,7 @@ article {
   margin: auto;
   margin-top: 50px;
 }
-#previews-section > div > img {
+#previews-section > div  img {
   cursor: pointer;
   border-radius: 25px;
   width: 100%;
