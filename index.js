@@ -47,6 +47,11 @@ window.onload = function () {
         })
     }
 }
+window.onresize = () => {
+    if (width > 768){
+        location.reload()
+    } 
+}
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100 && width < 481) {
         navbar[0].style.padding = "15px";
@@ -146,23 +151,7 @@ window.addEventListener('scroll', () => {
     window.scrollY >= screen.availHeight ? arrowup[0].style.display = "block" : arrowup[0].style.display = "none";
 
 })
-let grid = document.getElementsByClassName('grid');
-let paintbrush = document.getElementsByClassName('fa-paintbrush');
-let chart = document.getElementsByClassName('fa-chart-line');
-let code = document.getElementsByClassName('fa-code ');
-let teamGrid = document.getElementsByClassName('team-grid');
-let team_switch = document.getElementsByClassName('team-switcher');
-let team_section = document.getElementById('teams-section');
 
-function pressTeamSwitchLeft(){
-    team_section.style.animation = "team-switch-left 0.4s linear 1 forwards"
-}
-function pressTeamSwitchMiddle(){
-    team_section.style.animation = "team-switch-middle 0.4s linear 1 forwards"
-}
-function pressTeamSwitchRight(){
-    team_section.style.animation = "team-switch-right 0.4s linear 1 forwards"
-}
 
 function pressMenu() {
     navlinks.style.display = "block";
