@@ -511,6 +511,7 @@ article {
 }
 #contact a{
   color: blur;
+  color: #000;
 }
 #contact-section aside h1 {
   font-size: 25px;
