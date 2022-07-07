@@ -6,40 +6,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/b298f4f13f.js" crossorigin="anonymous"></script>
     <style>
+        nav {
+            position: fixed;
+            top: 0;
+        }
+
+        nav .fas {
+            display: none;
+            margin-left: auto;
+        }
+
         body {
             overflow-y: hidden;
+            background: url(./images/wallpaper.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            color: white;
         }
 
         div {
             margin: auto;
             width: 100vw;
-        }
-
-        h1 {
+            padding: 0 15px;
             height: 100vh;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             overflow-y: hidden;
         }
 
         #text {
-            color: rgb(26, 190, 40);
+            color: #fff;
+            max-width: 1000px;
             text-align: center;
             font-size: 50px;
+            margin: 30px auto;
+        }
+
+        @media (max-width: 768px) {
+            body {
+                background: url(./images/wallpaper-tablet.jpg);
+                background-size: cover;
+            }
+
+            nav .fas {
+                color: #fff;
+                display: unset;
+                cursor: pointer;
+            }
+
+            nav .fa-xmark {
+                display: none;
+                position: relative;
+                z-index: 2;
+            }
+
+            div a {
+                color: yellow;
+                text-decoration: underline;
+            }
         }
     </style>
 </head>
 
 <body>
+    <nav>
+        <h1> <a href="./index.html">Portfo<span class="lio">lio.</span></a></h1>
+        <ul class="navlinks">
+            <a href="./index.html" class="links home"> Home</a>
+            <a href="./index.html" class="links about">About</a>
+            <a href="./index.html" class="links projects">Projects</a>
+            <a href="./index.html class=" links skills">Skills</a>
+            <a href="./index.html" class="links Previews">Certficates</a>
+            <a href="./index.html" class="links contact">Contact</a>
+        </ul>
+        <i class="fas fa-bars" onclick="pressMenu()"></i>
+        <i class="fas fa-xmark" onclick="pressClose()"></i>
+    </nav>
     <div>
         <h1 id="text">You've succesfully submitted your info and will be reviewed, Thanks for checking out my portfolio
         </h1>
+        <a href="./index.html">Back to home</a>
     </div>
     <script>
         window.onload = function () {
-            alert('You\'ve succesfully submitted your info and will be reviewed, Thanks for checking out my portfolio')
+            // alert('You\'ve succesfully submitted your info and will be reviewed, Thanks for checking out my portfolio')
             let text = document.querySelector('#text');
             let x = ((Math.random() * 1000)).toFixed()
             let y = ((Math.random() * 1000)).toFixed()
@@ -48,6 +106,7 @@
             if (y > 255) y = 100;
         }
     </script>
+    <script src="index.js"></script>
 </body>
 
 
