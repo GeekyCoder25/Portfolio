@@ -20,11 +20,7 @@ window.onload = function () {
 		});
 	}
 };
-window.onresize = () => {
-	if (width > 768) {
-		location.reload();
-	}
-};
+
 window.addEventListener('scroll', () => {
 	if (window.scrollY > 100 && width < 481) {
 		navbar[0].style.padding = '15px';
